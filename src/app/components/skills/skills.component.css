@@ -1,0 +1,103 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #21201f;
+  padding: 1rem;
+}
+.container {
+  position: relative;
+  margin: auto;
+  width: 900px;
+  color: #aeaeae;
+}
+.background-img {
+  height: 87vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #21201f;
+  margin-top: -33vh;
+  margin-left: -200px;
+}
+.e-row {
+  border-bottom: #aeaeae solid 1px;
+}
+.c-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.e-row-strong {
+  border-bottom: #ef6817 solid 3px;
+  position: relative;
+  width: 100px;
+}
+
+.skill {
+  position: relative;
+  flex-basis: 200px;
+  padding: 0.4rem;
+}
+.skill-title {
+  display: flex;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0.1rem 1rem;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+h2 {
+  font-size: 1.9em;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+h4 {
+  font-size: 1.3em;
+  font-weight: 100;
+}
+.highlight {
+  color: #ef6817;
+}
+.highlight:after {
+  content: "";
+  border-left: #ef6817 2px solid;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0px;
+}
+.fa-brands {
+  color: #ef6817;
+  background-color: #21201f;
+  font-size: 2em;
+}
+.fa-brands-fake {
+  color: #21201f;
+  background-color: #ef6817;
+  font-size: 1.1em;
+  padding: 0 0.1rem 0 0.8rem;
+  border-radius: 1px;
+  font-weight: 500;
+}
+.custom-logo img {
+  width: 36px;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 95%;
+  }
+  img {
+    margin-left: -450px;
+  }
+}
