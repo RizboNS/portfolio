@@ -5,9 +5,17 @@ import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'skills', component: SkillsComponent },
+  { path: 'home', component: HomeComponent, data: { bodyClass: 'gray' } },
+  {
+    path: 'experience',
+    component: ExperienceComponent,
+    data: { bodyClass: 'gray' },
+  },
+  {
+    path: 'skills',
+    component: SkillsComponent,
+    data: { bodyClass: 'dark-gray' },
+  },
 ];
 
 @NgModule({

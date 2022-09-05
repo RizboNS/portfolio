@@ -34,13 +34,12 @@ img {
 
 @media screen and (max-width: 1300px) {
   .container {
-    width: 95%;
+    width: 80%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .container {
-    width: 95%;
-    position: relative;
+    width: 80%;
     display: block;
   }
   img {
@@ -51,7 +50,23 @@ img {
     height: 70vh;
   }
   h1 {
+    margin-top: 30vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+    position: relative;
+  }
+  img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    height: 70vh;
+  }
+  h1 {
     color: #fff;
-    text-align: center;
+    margin-top: 30vh;
   }
 }
