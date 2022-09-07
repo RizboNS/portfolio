@@ -1,20 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HomeComponent } from './components/home/home.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { bodyClass: 'gray' } },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
   {
     path: 'experience',
     component: ExperienceComponent,
-    data: { bodyClass: 'gray' },
   },
   {
     path: 'skills',
     component: SkillsComponent,
-    data: { bodyClass: 'dark-gray' },
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
 ];
 

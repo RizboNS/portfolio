@@ -36,17 +36,15 @@ a {
 }
 a:hover {
   color: #fff;
-  font-weight: 400;
-  border-bottom: 2px solid #ef6817;
+  border-bottom: 1px solid #ef6817;
 }
 a:active {
   color: #ef6817;
-  border-bottom: solid 2px #ef6817;
+  border-bottom: solid 1px #ef6817;
 }
 .active {
   color: #fff;
-  font-weight: 400;
-  border-bottom: solid 2px #ef6817;
+  border-bottom: solid 1px #ef6817;
 }
 
 @media screen and (max-width: 800px) {

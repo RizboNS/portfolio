@@ -1,0 +1,128 @@
+.container {
+  position: relative;
+  width: 900px;
+  margin: 1rem;
+  color: #aeaeae;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+img {
+  height: 87vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.e-row-strong {
+  border-bottom: #ef6817 solid 3px;
+  position: relative;
+  width: 100px;
+}
+.e-row {
+  border-bottom: #aeaeae solid 1px;
+}
+.contact-body {
+  border-top: #aeaeae solid 1px;
+  border-bottom: #aeaeae solid 1px;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info:hover {
+  color: #fff;
+}
+.contact-info:active {
+  color: #ef6817;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #aeaeae;
+}
+
+.contact-logo {
+  margin: 0.9rem;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 300;
+}
+form {
+  padding: 1rem;
+}
+label {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background-color: #21201f;
+  font-size: 1.4em;
+  padding: 0.5rem;
+  border: 1px solid #21201f;
+  outline: 0;
+  color: #aeaeae;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  resize: vertical;
+}
+button {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid #ef6817;
+  padding: 0.5rem;
+  color: #aeaeae;
+  font-size: 1.6em;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: #ef6817;
+  color: #fff;
+}
+input:focus,
+textarea:focus {
+  border: #ef6817 1px solid;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  img {
+    display: none;
+  }
+  .container {
+    margin: auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-info {
+    justify-content: flex-start;
+    font-size: 1.2em;
+  }
+  .contact-body {
+    display: block;
+  }
+}

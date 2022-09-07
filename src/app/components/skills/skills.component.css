@@ -28,6 +28,7 @@
   position: relative;
   width: 100px;
 }
+
 .skill,
 h1,
 h2 {
@@ -43,6 +44,10 @@ h2:hover,
 .skill:hover,
 .highlight:hover {
   color: #fff;
+}
+.dot:hover {
+  height: 25px;
+  width: 25px;
 }
 .skill {
   position: relative;
@@ -111,6 +116,14 @@ h4 {
 .right {
   padding-right: 0.8rem;
   padding-left: 0.1rem;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #ef6817;
+  border-radius: 50%;
+  display: inline-block;
+  transition: height ease-in-out 0.3s, width ease-in-out 0.3s;
 }
 @media screen and (max-width: 1300px) {
   .container {
