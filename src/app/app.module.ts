@@ -10,6 +10,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ExperienceComponent,
     SkillsComponent,
     ContactComponent,
+    AboutComponent,
+    ProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

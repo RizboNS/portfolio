@@ -27,7 +27,7 @@ img {
   border-top: #aeaeae solid 1px;
   border-bottom: #aeaeae solid 1px;
   margin-top: 2rem;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -92,6 +92,8 @@ button {
   font-size: 1.6em;
   cursor: pointer;
   margin-top: 1rem;
+  transition: background-color ease-in-out 0.4s;
+  transition: color ease-in-out 0.4s;
 }
 button:hover {
   background-color: #ef6817;
