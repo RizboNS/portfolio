@@ -26,8 +26,8 @@ img {
 .contact-body {
   border-top: #aeaeae solid 1px;
   border-bottom: #aeaeae solid 1px;
-  margin-top: 2rem;
-  padding: 0.9rem 0;
+  margin-top: 1.7rem;
+  padding: 0.7rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -47,13 +47,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #aeaeae;
 }
 
 .contact-logo {
   margin: 0.9rem;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h4 {
@@ -61,7 +61,7 @@ h4 {
   font-weight: 300;
 }
 form {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 label {
   display: block;
@@ -83,7 +83,7 @@ textarea {
   border-radius: 2px;
   resize: vertical;
 }
-button {
+.btn {
   background-color: transparent;
   width: 100%;
   border: 1px solid #ef6817;
@@ -95,7 +95,7 @@ button {
   transition: background-color ease-in-out 0.4s;
   transition: color ease-in-out 0.4s;
 }
-button:hover {
+.btn:hover {
   background-color: #ef6817;
   color: #fff;
 }
@@ -104,6 +104,24 @@ textarea:focus {
   border: #ef6817 1px solid;
 }
 
+.disabled {
+  background-color: darkgray;
+  color: #21201f;
+  border: 1px red solid;
+}
+.disabled:hover {
+  background-color: darkgray;
+  color: #21201f;
+  border: 1px red solid;
+}
+.error-msg {
+  color: red;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.field-error {
+  border: red 1px solid;
+}
 @media screen and (max-width: 1400px) {
   .container {
     width: 650px;

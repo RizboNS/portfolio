@@ -31,7 +31,9 @@ h1 {
 img {
   height: 87vh;
 }
-
+h1:hover {
+  color: #fff;
+}
 @media screen and (max-width: 1300px) {
   .container {
     width: 80%;
@@ -64,6 +66,7 @@ img {
     right: 0;
     z-index: -1;
     height: 70vh;
+    filter: brightness(80%);
   }
   h1 {
     color: #fff;

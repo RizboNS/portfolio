@@ -1,5 +1,5 @@
 <img src="../../../assets/contactImg.png" alt="contact picture" />
-<div class="container">
+<div class="container" *ngIf="msgForm">
   <div class="e-row-strong">
     <h1>Contact</h1>
   </div>
@@ -34,19 +34,66 @@
       </div>
     </a>
   </div>
-  <form>
+  <form [formGroup]="msgForm">
     <div>
       <label>Your Name</label>
-      <input type="text" />
+      <input
+        type="text"
+        formControlName="name"
+        [ngClass]="{
+          'field-error':
+            !msgForm.get('name')?.valid && msgForm.get('name')?.touched
+        }"
+      />
+    </div>
+    <div
+      class="error-msg"
+      *ngIf="msgForm.get('name')?.touched && !msgForm.get('name')?.valid"
+    >
+      Required
     </div>
     <div>
       <label>Your Email</label>
-      <input type="text" />
+      <input
+        type="text"
+        formControlName="email"
+        [ngClass]="{
+          'field-error':
+            !msgForm.get('email')?.valid && msgForm.get('email')?.touched
+        }"
+      />
+    </div>
+    <div
+      class="error-msg"
+      *ngIf="msgForm.get('email')?.touched && !msgForm.get('email')?.valid"
+    >
+      Email must be in the email format...
     </div>
     <div>
       <label>Your Message</label>
-      <textarea cols="30" rows="6"></textarea>
+      <textarea
+        cols="30"
+        rows="6"
+        formControlName="msg"
+        [ngClass]="{
+          'field-error':
+            !msgForm.get('msg')?.valid && msgForm.get('msg')?.touched
+        }"
+      ></textarea>
     </div>
-    <button>Send</button>
+    <div
+      class="error-msg"
+      *ngIf="msgForm.get('msg')?.touched && !msgForm.get('msg')?.valid"
+    >
+      Message must be at least 2 characters long...
+    </div>
+    <button
+      [disabled]="!msgForm.valid"
+      (click)="sendMsgToService(); $event.preventDefault()"
+      class="btn"
+      [ngClass]="{ disabled: !msgForm.valid && msgForm.touched }"
+    >
+      Send
+    </button>
   </form>
 </div>

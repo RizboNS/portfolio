@@ -23,7 +23,14 @@ h3 {
 }
 img {
   width: 100%;
+  border-radius: 2px;
+  border: #727272 1px solid;
+  padding: 1px;
 }
+img:hover {
+  border: #ef6817 1px solid;
+}
+
 .project {
   display: flex;
   justify-content: flex-start;
@@ -53,6 +60,18 @@ p {
   font-size: 1.2em;
   padding: 0.5rem 0;
 }
+
+.project-link {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.2rem;
+  padding: 0.4rem;
+  border-radius: 2px;
+}
+.project-link:hover {
+  background-color: #727272;
+}
+
 @media screen and (max-width: 1100px) {
   .project {
     display: block;
